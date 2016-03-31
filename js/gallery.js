@@ -64,6 +64,7 @@ console.log(err.message)
 };
 mRequest.open("GET",mURL, true);
 mRequest.send();
+<a href="images.json";
 
 // Array holding GalleryImage objects (see below).
 var mImages = [];
