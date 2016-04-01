@@ -41,7 +41,8 @@ function swapPhoto() {
 	$('#photo').attr("src", mImages[mCurrentIndex].imgPath);
 	if(mCurrentIndex < mImages.length) {
 		mCurrentIndex++;
-	else mCurrentIndex=0;
+	}
+	else {mCurrentIndex=0;
 }
 function reverseSwapPhoto() {
 	if(mCurrentIndex==0)
