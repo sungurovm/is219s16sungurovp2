@@ -98,11 +98,19 @@ window.addEventListener('load', function() {
 }, false);
 
 function GalleryImage(path,location,description,date) {
-	this.path = path;
-	this.location = location;
-	this.description = description;
-	this.date = date;
+	this.imgPath = path;
+	this.imgLocation = location;
+	this.imgDescription = description;
+	this.imgDate = date;
 };
+myArray[].push(new GalleryImage(""))
+myArray[].push(new GalleryImage(""))
+myArray[].push(new GalleryImage(""))
+
+console.log(myArray[0]);;
+console.log(myarray[1]);
+console.log(myArray[2]);
+console.log(myArray[3]);
 	
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
