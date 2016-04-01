@@ -98,8 +98,8 @@ window.addEventListener('load', function() {
 }, false);
 
 function GalleryImage(path,location,description,date) {
-	this.imgPath = path;
-	this.imgLocation = location;
+	this.imgPath = imgPath;
+	this.imgLocation = imgLocation;
 	this.imgDescription = description;
 	this.imgDate = date;
 };
