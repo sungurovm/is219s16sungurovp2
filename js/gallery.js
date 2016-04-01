@@ -120,7 +120,7 @@ function GalleryImage(path,location,description,date) {
 	this.imgDescription = description;
 	this.imgDate = date;
 };
-
+}
 
 	
 	//implement me as an object to hold the following data about an image:
