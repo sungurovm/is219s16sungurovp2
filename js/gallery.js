@@ -39,10 +39,12 @@ function swapPhoto() {
 	//from the JSON string
 	console.log('swap photo');
 	$("#photo").attr("src", mImages[mCurrentIndex].imgPath);
-	if(mCurrentIndex < mImages.length) {
-		mCurrentIndex++;
-	}
-	else {mCurrentIndex=0;
+	if(mCurrentIndex < mImages.length-1) {
+	 mCurrentIndex = 0;
+    } else if (mCurrentIndex < 0) {
+        mCurrentIndex = mImages.length - 1;
+
+    }
 }
 function reverseSwapPhoto() {
 	if(mCurrentIndex==0)
