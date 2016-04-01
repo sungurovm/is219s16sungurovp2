@@ -45,6 +45,8 @@ function swapPhoto() {
         mCurrentIndex = mImages.length - 1;
 
     }
+	 }
+    console.log(mCurrentIndex)
 }
 function reverseSwapPhoto() {
 	if(mCurrentIndex==0)
