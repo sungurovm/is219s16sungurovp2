@@ -117,10 +117,10 @@ window.addEventListener('load', function() {
 function GalleryImage(path,location,description,date) {
 	this.imgPath = imgPath;
 	this.imgLocation = imgLocation;
-	this.imgDescription = description;
-	this.imgDate = date;
+	this.Description = description;
+	this.Date = date;
 }
-};
+
 
 
 	
