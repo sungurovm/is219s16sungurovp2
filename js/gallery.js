@@ -38,17 +38,17 @@ function swapPhoto() {
 	//with a new image from your images array which is loaded 
 	//from the JSON string
 	console.log('swap photo');
-	$("#photo").attr("src", mImages[mCurrentIndex].imgPath);
+	$('#photo').attr("src", mImages[mCurrentIndex].imgPath);
 	if(mCurrentIndex < mImages.length)
 		mCurrentIndex++;
-	elsemCurrentIndex=0;
+	else mCurrentIndex=0;
 }
 function reverseSwapPhoto() {
 	if(mCurrentIndex==0)
 		mCurrentIndex=mImages.length-1;
 		else
 			mCurrentIndex--;
-		$("photo").attr("src",mImages[mCurrentIndex].imgPath);
+		$('photo').attr("src",mImages[mCurrentIndex].imgPath);
 }
 
 
