@@ -12,7 +12,7 @@
   
 
 // example code from mr doob : http://mrdoob.com/lab/javascript/requestanimationframe/
-
+var mCurrentIndex = 0;
 animate();
 
 var mLastFrameTime = 0;
@@ -26,6 +26,7 @@ function animate() {
 
 	if ((currentTime - mLastFrameTime) > mWaitTime) {
 		swapPhoto();
+		console.log(mCurrentIndex);
 		mLastFrameTime = currentTime;
 	}
 }
@@ -37,16 +38,16 @@ function swapPhoto() {
 	//Access the img element and replace its source
 	//with a new image from your images array which is loaded 
 	//from the JSON string
+	
 	console.log('swap photo');
 	$("#photo").attr("src", mImages[mCurrentIndex].imgPath);
 	if(mCurrentIndex < mImages.length-1) {
-	 mCurrentIndex = 0;
+	   mCurrentIndex++;
     } else if (mCurrentIndex < 0) {
         mCurrentIndex = mImages.length - 1;
 
     }
-	 }
-    console.log(mCurrentIndex)
+    console.log(mCurrentIndex);
 }
 function reverseSwapPhoto() {
 	if(mCurrentIndex==0)
@@ -58,7 +59,6 @@ function reverseSwapPhoto() {
 
 
 // Counter for the mImages array
-var mCurrentIndex = 0;
 
 // XMLHttpRequest variable
 var mURL = "images.json";
