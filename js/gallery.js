@@ -39,7 +39,7 @@ function swapPhoto() {
 	//from the JSON string
 	console.log('swap photo');
 	$('#photo').attr("src", mImages[mCurrentIndex].imgPath);
-	if(mCurrentIndex < mImages.length)
+	if(mCurrentIndex < mImages.length) {
 		mCurrentIndex++;
 	else mCurrentIndex=0;
 }
