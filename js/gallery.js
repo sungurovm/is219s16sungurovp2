@@ -114,12 +114,25 @@ window.addEventListener('load', function() {
 
 }, false);
 
-function GalleryImage(path,location,description,date) {
+function GalleryImage(imgPath,imgLocation,description,date) {
 	this.imgPath = imgPath;
 	this.imgLocation = imgLocation;
 	this.Description = description;
 	this.Date = date;
+	console.log('data stored');
+};
+console.log(JSON.parse(this.responseText));
+var mJson = JSON.parse(this.responseText);
+for (var i = 0; i < mJson.images.length; i++) {
+	var current = mJson.images[i];
+	var imageDetails = new galleryImage(current.imgPath, current.imgLocation, current.description, current.date)
+	mImages.push(imageDetails);
 }
+}
+mRequest.addEventlistener("load", reqListener);
+mRequest.open("GET", mURL);
+mRequest.send();
+
 
 
 
