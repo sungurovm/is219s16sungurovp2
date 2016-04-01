@@ -121,6 +121,8 @@ function GalleryImage(imgPath,imgLocation,description,date) {
 	this.Date = date;
 	console.log('data stored');
 };
+function reqListener()
+{
 console.log(JSON.parse(this.responseText));
 var mJson = JSON.parse(this.responseText);
 for (var i = 0; i < mJson.images.length; i++) {
