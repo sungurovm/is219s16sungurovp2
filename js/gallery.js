@@ -54,6 +54,10 @@ try {
 // Let’s try and see if we can parse JSON (see next slide)
 mJson = JSON.parse(mRequest.responseText);
 // LOOP THROUGH the mJSON array here and fill up the
+for (var i=0, mJson.images.length; i++){
+	mImages.push(new GalleryImage());
+
+
 // mImages array with GalleryImage objects
 // Let’s print out the JSON; It will likely show as “obj”
 console.log(mJson);
@@ -103,14 +107,11 @@ function GalleryImage(path,location,description,date) {
 	this.imgDescription = description;
 	this.imgDate = date;
 };
-myArray[].push(new GalleryImage(""))
-myArray[].push(new GalleryImage(""))
-myArray[].push(new GalleryImage(""))
 
-console.log(myArray[0]);;
-console.log(myarray[1]);
-console.log(myArray[2]);
-console.log(myArray[3]);
+
+
+}
+
 	
 	//implement me as an object to hold the following data about an image:
 	//1. location where photo was taken
