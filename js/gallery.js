@@ -65,7 +65,7 @@ try {
 // Let’s try and see if we can parse JSON (see next slide)
 mJson = JSON.parse(mRequest.responseText);
 // LOOP THROUGH the mJSON array here and fill up the
-for (var i=0, mJson.images.length; i++){
+for (var i=0; mJson.images.length; i++){
 	mImages.push(new GalleryImage(mJson.images[i].imgPath, mJson.images[i].imgLocation, mJson.images[i].description, mJson.images[i].date));
 }
 	
