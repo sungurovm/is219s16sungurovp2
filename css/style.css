@@ -37,7 +37,7 @@ body {
 }
 
 .thumbnail {
-	position: Absolute;
+	position: fixed;
 	box-shadow: 1px 3px 20px 0px;
 }
 
