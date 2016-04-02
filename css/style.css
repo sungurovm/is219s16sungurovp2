@@ -20,6 +20,7 @@ body {
 
 .photoHolder {
 	position: relative;
+	right: 100px;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -38,7 +39,7 @@ body {
 
 .thumbnail {
 	position: relative;
-	right: 150px;
+	right: 100px;
 	box-shadow: 1px 3px 20px 0px;
 }
 
