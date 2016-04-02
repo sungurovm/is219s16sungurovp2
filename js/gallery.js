@@ -40,7 +40,11 @@ function swapPhoto() {
 	//from the JSON string
 	
 	console.log('swap photo');
-	$("#photo").attr("src", mImages[mCurrentIndex].imgPath);
+	$("#photo").attr("src", mImages[mCurrentIndex].imgPath); //get image
+	$(".location").text("location:" + mImages[mCurrentIndex].imgLocation);
+	$(".description").text("description:" + mImages[mCurrentIndex].Description);
+	$(".date").text("date:" + mImages[mCurrentIndex].Date);
+	$(".details").show();
 	if(mCurrentIndex < mImages.length-1) {
 	   mCurrentIndex++;
     } else if (mCurrentIndex < 0) {
@@ -69,12 +73,13 @@ if (mRequest.readyState == 4 && mRequest.status == 200) {
 try {
 // Let’s try and see if we can parse JSON (see next slide)
 mJson = JSON.parse(mRequest.responseText);
+console.log(mRequest.responseText);
 // LOOP THROUGH the mJSON array here and fill up the
-for (var i=0; mJson.images.length; i++){
+var i;
+for ( i=0; mJson.images.length; i++){
 	mImages.push(new GalleryImage(mJson.images[i].imgPath, mJson.images[i].imgLocation, mJson.images[i].description, mJson.images[i].date));
+	console.log(mImages);
 }
-	
-
 
 // mImages array with GalleryImage objects
 // Let’s print out the JSON; It will likely show as “obj”
