@@ -1,0 +1,33 @@
+{
+    "images": [
+        {
+            "imgPath": "https://s3.amazonaws.com/rapgenius/Ride%20The%20Lightning.jpg"
+            "imgLocation": "First image (index 0)",
+            "description": "This is one of my favorite metal albums",
+            "date": "03/31/2016"
+        },
+        {
+            "imgPath": "http://www.riceandbreadmagazine.com/wp-content/uploads/2014/09/Slayer-Reign-In-Blood-1024x1024.jpg",
+            "imgLocation": "Second image (index 1)",
+            "description": "Another one of my favorites",
+            "date": "03/31/2016"
+        },
+        {
+            "imgPath": "https://i.ytimg.com/vi/XlTMjXMK3dc/maxresdefault.jpg",
+            "imgLocation": "Third image (index 2)",
+            "description": "Great record from the late 80s very heavy",
+            "date": "03/31/2016"
+        },
+    {
+      "imgPath": "http://www.nuclearblast.de/static/articles/100/100829.jpg/1000x1000.jpg",
+      "imgLocation": "Fourth image (index 3)",
+      "description": "Great riff filled thrash metal album",
+      "date": "04/01/2016"
+    }
+   {
+      "imgPath": "https://upload.wikimedia.org/wikipedia/en/9/9b/Iron_Maiden_-_Somewhere_in_Time.jpg",
+      "imgLocation": "Fourth image (index 3)",
+      "description": "Classic heavy metal at its finest",
+      "date": "04/01/2016"
+    }
+	]
