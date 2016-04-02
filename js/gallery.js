@@ -144,6 +144,10 @@ mRequest.addEventlistener("load", reqListener);
 mRequest.open("GET", mURL);
 mRequest.send();
 
+var main = function() {
+$('.dropdown-toggle').click(function() {
+$('.dropdown-menu').toggle();
+});
 
 
 
